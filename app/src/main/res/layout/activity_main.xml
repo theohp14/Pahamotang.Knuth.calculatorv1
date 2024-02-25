@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/title"
         android:layout_width="110dp"
         android:layout_height="23dp"
         android:text="Simple Calculator"
@@ -16,46 +17,51 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintVertical_bias="0.050000012"
+        tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/txtResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="43dp"
+        android:layout_height="19dp"
         android:text="Result:"
         tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="136dp" />
+        tools:layout_editor_absoluteY="136dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="39dp"
+        android:layout_height="19dp"
         android:text="Check"
+        tools:ignore="TextSizeCheck"
         tools:layout_editor_absoluteX="168dp"
         tools:layout_editor_absoluteY="136dp" />
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="102dp"
+        android:layout_height="48dp"
         android:onClick="buttonAddition"
-        android:text="Addition"
+        android:text="@string/addition"
+        tools:ignore="MissingConstraints,TextSizeCheck,UsingOnClickInXml"
         tools:layout_editor_absoluteX="84dp"
         tools:layout_editor_absoluteY="363dp" />
 
     <EditText
         android:id="@+id/txtnum1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="210dp"
+        android:layout_height="45dp"
         android:ems="10"
         android:inputType="text"
         tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="187dp" />
+        tools:layout_editor_absoluteY="187dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/txtNum2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="text"
         tools:layout_editor_absoluteX="100dp"
@@ -63,8 +69,8 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="122dp"
+        android:layout_height="48dp"
         android:onClick="buttonSubtraction"
         android:text="Subtraction"
         tools:layout_editor_absoluteX="219dp"
@@ -72,8 +78,8 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="135dp"
+        android:layout_height="48dp"
         android:onClick="buttonMultiplication"
         android:text="Multiplication"
         tools:layout_editor_absoluteX="84dp"
@@ -81,8 +87,8 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="99dp"
+        android:layout_height="48dp"
         android:onClick="buttonDivision"
         android:text="Division"
         tools:layout_editor_absoluteX="242dp"
