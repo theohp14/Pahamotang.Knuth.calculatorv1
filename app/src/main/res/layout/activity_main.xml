@@ -8,90 +8,126 @@
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="110dp"
-        android:layout_height="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Simple Calculator"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txtnum1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.050000012"
+        app:layout_constraintVertical_bias="0.478"
         tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/txtResult"
         android:layout_width="43dp"
         android:layout_height="19dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="167dp"
+        android:layout_marginBottom="63dp"
         android:text="Result:"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="136dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toBottomOf="@+id/txtNum2"
+        app:layout_constraintEnd_toEndOf="@+id/txtnum1"
+        app:layout_constraintTop_toTopOf="@+id/txtnum1"
+        tools:ignore="MissingConstraints,TextSizeCheck" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="39dp"
-        android:layout_height="19dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginBottom="62dp"
         android:text="Check"
-        tools:ignore="TextSizeCheck"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="136dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/txtnum1"
+        app:layout_constraintEnd_toEndOf="@+id/txtnum1"
+        app:layout_constraintStart_toStartOf="@+id/txtnum1"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:ignore="MissingConstraints,TextSizeCheck" />
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="102dp"
+        android:layout_width="wrap_content"
         android:layout_height="48dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="35dp"
         android:onClick="buttonAddition"
-        android:text="@string/addition"
-        tools:ignore="MissingConstraints,TextSizeCheck,UsingOnClickInXml"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="363dp" />
+        android:text="Addition"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="@+id/txtNum2"
+        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNum2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints,TextSizeCheck,UsingOnClickInXml" />
 
     <EditText
         android:id="@+id/txtnum1"
         android:layout_width="210dp"
         android:layout_height="45dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="46dp"
         android:ems="10"
         android:inputType="text"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="187dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtNum2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/txtNum2"
         android:layout_width="210dp"
         android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="101dp"
         android:ems="10"
         android:inputType="text"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="278dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnum1"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="122dp"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="83dp"
         android:onClick="buttonSubtraction"
         android:text="Subtraction"
-        tools:layout_editor_absoluteX="219dp"
-        tools:layout_editor_absoluteY="363dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toEndOf="@+id/button1"
+        app:layout_constraintTop_toTopOf="@+id/txtNum2"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="135dp"
-        android:layout_height="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="348dp"
         android:onClick="buttonMultiplication"
         android:text="Multiplication"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="446dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button1"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="99dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="348dp"
         android:onClick="buttonDivision"
         android:text="Division"
-        tools:layout_editor_absoluteX="242dp"
-        tools:layout_editor_absoluteY="446dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
